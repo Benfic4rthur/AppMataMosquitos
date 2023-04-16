@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mata Mosquito The Game</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/jogo.js"></script>
+</head>
+
+<body onresize="ajustaTamanhoPalcoJogo()">
+    <div class="painel">
+        <div class="vida">
+            <img src="imagens/coracao_cheio.png" id="v1" class="vida">
+            <img src="imagens/coracao_cheio.png" id="v2" class="vida">
+            <img src="imagens/coracao_cheio.png" id="v3" class="vida">
+        </div>
+        <div class="cronometro">
+            Tempo Restante: <span id="cronometro"></span>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('cronometro').innerHTML = tempo
+        posicaoRandomica()
+        let criaMosquito = setInterval(function () {
+            posicaoRandomica()
+        }, criaMosquitoTempo) 
+    </script>
+</body>
+
+</html>
