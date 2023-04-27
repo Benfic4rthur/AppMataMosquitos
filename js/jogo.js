@@ -15,10 +15,12 @@ if (nivel == "facil") {
 } else if (nivel == "dificil") {
   criaMosquitoTempo = 1000;
 } else if (nivel == "chucknorris") {
-  criaMosquitoTempo = 300;
+  criaMosquitoTempo = 500;
   tempo = 10;
+} else if(nivel == "entaotueobonzao"){
+  criaMosquitoTempo = 100;
+  tempo = 30;
 }
-
 //criando cronometro
 let cronometro = setInterval(function () {
   tempo -= 1;
