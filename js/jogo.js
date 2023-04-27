@@ -15,7 +15,7 @@ if (nivel == "facil") {
 } else if (nivel == "dificil") {
   criaMosquitoTempo = 1000;
 } else if (nivel == "chucknorris") {
-  criaMosquitoTempo = 600;
+  criaMosquitoTempo = 300;
   tempo = 10;
 }
 
